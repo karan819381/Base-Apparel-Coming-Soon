@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              DesaturatedRed: "#CE9797",
+              SoftRed: "#F96262",
+              DarkGrayishRed: "#413A3A",
+              White: "#FFFFFF",
+              LightWhite: "#FFF5F5",
+              LighterRed: "#F8BFBF",
+              LightRed: "#EE8C8C",
+            },
+          },
+          fontFamily: {
+            Josefin: '"Josefin Sans", "sans-serif"',
+          },
+        },
+      };
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="w-full h-screen font-Josefin text-[16px] bg-gradient-to-r from-White to-LightWhite"
+  >
+      <main class="w-full flex flex-col-reverse md:flex-row">
+        <section class="w-[14rem] md:w-1/2 px-[3rem] py-[2rem] md:px-[10.2rem] md:py-[4.1rem]  ">
+          
+          <section class="">
+            <img src="./images/logo.svg" alt="logo">
+          </section >
+          <section class="mt-7 md:mt-[7.7rem] uppercase text-center md:text-start">
+            <div class="text-[3rem] md:text-[3.7rem] md:tracking-[.34em] text-DesaturatedRed font-thin">We're</div>
+            <div class="text-6xl font-black tracking-[.34em] leading-[4rem]">Coming Soon</div>
+          </section>
+          <section class="mt-6 leading-[1.6em]">
+            <p class="text-DesaturatedRed">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+          </section>
+          <section class="relative">
+            <input class="email w-full mt-10 py-5 px-8 rounded-full border-2 border-LighterRed" type="email" name="email" id="mail" placeholder="Email Address">
+              <section class="icon-error hidden absolute top-[3.6rem] right-[8rem]">
+                <img src="./images/icon-error.svg" alt="icon-error">
+                
+              </section>
+              <section class="w-full absolute top-10 left-[22rem]">
+                <button class=" bg-gradient-to-r from-LighterRed to-LightRed py-[1.5em] px-[2.6em]  rounded-full shadow-lg" type="submit" onclick="validateEmail()">
+                  <img src="./images/icon-arrow.svg" alt="icon-arrow">
+                </button>
+              </section>
+          </section>
+          <p class="warning hidden mt-3 ml-3 text-SoftRed">Please Provide a valid Email</p>
+        </section>
+
+        <section class="w-1/2 ml-[3.5rem]">
+          
+            <img src="./images/hero-desktop.jpg" alt="hero-desktop">
+    
+        </section>
+
+      </main>
+      <script src="script.js"></script>
+</body>
+</html>
